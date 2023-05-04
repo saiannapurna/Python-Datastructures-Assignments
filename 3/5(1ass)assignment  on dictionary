@@ -1,0 +1,17 @@
+
+#assignment  on dictionary
+
+try:
+    n=int(input())
+    d={}
+    for i in range(n):
+        name,res=input().split()
+        d[name]=res
+    for i in range(n):
+        x=input()
+        if x in d:
+            print(x+d[x]+"the exam")
+        else:
+            print("No Result Found")
+except:
+    print()
