@@ -1,0 +1,15 @@
+a=[3,10,3,3,1,10,10,10,8,5,5]
+n=len(a)
+m=10
+print(fun(a,n,m))
+
+def fun(a,n,m):
+    c=[0]*(m+1);
+    for i in range(n):
+        c[a[i]]=c[a[i]]+1
+    ans=0
+    for i in range(m+1):
+        if(c[i]>c[ans]):
+            ans=i
+    return ans,c
+  
